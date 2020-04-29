@@ -44,7 +44,9 @@
     <arg name="uuv_name" value="eca_a9"/>
     <arg name="filename" value="$(find eca_a9_gazebo)/config/waypoint_set.yaml"/>
 <!--    <arg name="interpolator" value="dubins"/>-->
-    <arg name="interpolator" value="linear"/>
+<!--    <arg name="interpolator" value="linear"/>-->
+<arg name="interpolator" value="lipb"/>
+
   </include>
 
   <!-- Initialize the recording afo the simulation according to the record flag  -->
