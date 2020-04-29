@@ -22,7 +22,7 @@
   <xacro:include filename="$(find uuv_gazebo_ros_plugins)/urdf/snippets.xacro"/>
   <!-- Properties -->
   <xacro:property name="mass" value="69.7"/>
-  <xacro:property name="length" value="1.98"/>
+  <xacro:property name="length" value="19.8"/>
   <xacro:property name="diameter" value="0.23"/>
   <xacro:property name="radius" value="${diameter*0.5}"/>
   <xacro:property name="volume" value="0.06799987704121499"/>
@@ -42,14 +42,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="${visual_mesh_file}" scale="1 1 1" />
+          <mesh filename="${visual_mesh_file}" scale="40 40 40" />
         </geometry>
       </visual>
 
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="${visual_mesh_file}" scale="1 1 1" />
+          <mesh filename="${visual_mesh_file}" scale="40 40 40" />
         </geometry>
       </collision>
 
